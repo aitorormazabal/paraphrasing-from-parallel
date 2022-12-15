@@ -4,7 +4,7 @@ This repository contains the implementation of our paraphrasing model, as descri
 
 ## Training
 
-It is important that you use the version of fairseq included in this repo, as it contains minor changes to the optimizers that allow to pass the retain_graph flag to the `backward` function, which is necessary for the proper propagation of gradients as described in the paper.
+It is important that you use the version of fairseq included in this repo, as it contains minor changes to the optimizers that allow to pass the `retain_graph` flag to the `backward` function, which is necessary for the proper propagation of gradients as described in the paper.
 
 To train a model, you first need to binarize your bilingual training data, using the mBART sentencepiece tokenizer as described in the [mBART page](https://github.com/facebookresearch/fairseq/blob/main/examples/mbart/README.md). Instead of using the full pre-trained dictionary of 250K words for `fairseq-preprocess`, we create a new one of the most common 40K words. That is, your `fairseq-preprocess` call should look like this:
 
