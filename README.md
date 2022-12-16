@@ -71,7 +71,7 @@ fairseq-preprocess \
   Where `${lambda}` and `${disc_chance}` correspond to $\lambda$ and $K$ in the paper, respectively.
   
   ## Pretrained model
-  Alternatively, you can download our pretrained model for $\lambda=0.73$ and $K=0.7$ [here](todo).
+  Alternatively, you can download our pretrained model for $\lambda=0.73$ and $K=0.7$ [here](ttps://ixa2.si.ehu.eus/principled-paraphrasing/model_and_dicts.tar.gz).
   
   ## Evaluation
   
